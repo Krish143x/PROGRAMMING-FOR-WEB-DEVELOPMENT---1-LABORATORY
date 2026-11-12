@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Portfolio Header and Footer</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #243047;
+    }
+
+    .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      padding: 20px 7%;
+      background: #142d4e;
+      color: white;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .cta {
+      background: #f59e0b;
+      color: #182235;
+      padding: 10px 16px;
+      border-radius: 7px;
+    }
+
+    main {
+      min-height: 360px;
+      padding: 70px 8%;
+      background: #f2f6fb;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 28px;
+      padding: 35px 7%;
+      background: #0b1b30;
+      color: white;
+    }
+
+    .footer-column {
+      flex: 1 1 180px;
+    }
+
+    @media (max-width: 600px) {
+      .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="logo">Sai Surve.dev</div>
+    <nav class="nav-links"><a href="#">Home</a><a href="#">About</a><a href="#">Projects</a><a href="#">Contact</a>
+    </nav>
+    <a class="cta" href="mailto:sai.surve@example.com">Hire Me</a>
+  </header>
+  <main>
+    <h1>Welcome to My Portfolio</h1>
+    <p>I create simple, useful and responsive web experiences.</p>
+  </main>
+  <footer>
+    <section class="footer-column">
+      <h3>Sai Surve.dev</h3>
+      <p>Student web developer portfolio.</p>
+    </section>
+    <section class="footer-column">
+      <h3>Quick Links</h3>
+      <p><a href="#">About</a><br><a href="#">Projects</a></p>
+    </section>
+    <section class="footer-column">
+      <h3>Contact</h3>
+      <p>saisurve@example.com</p>
+    </section>
+  </footer>
+</body>
+
+</html>

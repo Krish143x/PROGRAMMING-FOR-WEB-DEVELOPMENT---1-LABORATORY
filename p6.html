@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #263238;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #172554;
+      color: white;
+      padding: 24px 8%;
+    }
+
+    nav {
+      background: #1e3a8a;
+      padding: 12px 8%;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 24px;
+    }
+
+    section {
+      padding: 22px;
+      margin: 18px 0;
+      background: #f1f5f9;
+      border-radius: 10px;
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .project {
+      background: white;
+      padding: 16px;
+      flex: 1 1 220px;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #172554;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Sai Surve</h1>
+    <p>Computer Science Student | Aspiring Web Developer</p>
+  </header>
+  <nav aria-label="Main navigation">
+    <a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+  </nav>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a computer science student learning programming and web technologies. I enjoy solving problems and
+        creating websites.</p>
+    </section>
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="projects">
+        <article class="project">
+          <h3>Bio Page</h3>
+          <p>A personal webpage made with semantic HTML.</p>
+        </article>
+        <article class="project">
+          <h3>Calculator</h3>
+          <p>A basic calculator interface built using web technologies.</p>
+        </article>
+        <article class="project">
+          <h3>Portfolio</h3>
+          <p>A responsive website showcasing my work.</p>
+        </article>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: sai.surve@example.com</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Sai Surve. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

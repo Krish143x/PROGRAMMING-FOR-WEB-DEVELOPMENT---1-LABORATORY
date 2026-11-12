@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Campus News</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      color: #202020;
+      background: #f5f1e8;
+    }
+
+    header {
+      text-align: center;
+      padding: 24px;
+      border-bottom: 4px double #222;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .date {
+      margin-top: 8px;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 22px;
+      max-width: 1200px;
+      margin: 25px auto;
+      padding: 0 20px;
+    }
+
+    article,
+    aside {
+      padding: 16px;
+      background: #fffdf8;
+      border: 1px solid #ddd4c4;
+    }
+
+    .lead {
+      grid-column: 2;
+      grid-row: 1 / span 2;
+    }
+
+    .left {
+      grid-column: 1;
+    }
+
+    .right {
+      grid-column: 3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 3px double #222;
+    }
+
+    @media (max-width: 750px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+
+      .lead,
+      .left,
+      .right {
+        grid-column: 1;
+        grid-row: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>THE DAILY CAMPUS</h1>
+    <p class="date">Bosscoder School of Technology | Wednesday Edition | November 2026</p>
+  </header>
+  <main>
+    <aside class="left">
+      <h2>Campus Update</h2>
+      <p>Students prepare for the annual technology festival with workshops and project displays.</p>
+    </aside>
+    <article class="lead">
+      <h2>Technology Shapes the Future</h2>
+      <p><strong>Innovation and learning take centre stage.</strong></p>
+      <p>Technology is changing how people learn, communicate and solve problems. Students are exploring new tools and
+        building projects that connect classroom knowledge with practical applications.</p>
+      <p>Faculty members encourage students to work in teams, ask questions and develop creative solutions.</p>
+    </article>
+    <aside class="right">
+      <h2>Sports Desk</h2>
+      <p>The college teams are preparing for the inter-college sports competition scheduled later this month.</p>
+    </aside>
+    <article class="left">
+      <h2>Science Corner</h2>
+      <p>A student club has announced a weekend science exhibition.</p>
+    </article>
+    <article class="right">
+      <h2>Coming Up</h2>
+      <p>Web development lab submissions are due next week.</p>
+    </article>
+  </main>
+  <footer>
+    <p>&copy; 2026 Bosscoder School of Technology</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects Grid</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 30px 6%;
+      font-family: Arial, sans-serif;
+      background: #eef2f7;
+      color: #243047;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-auto-rows: minmax(170px, auto);
+      gap: 18px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .project {
+      background: white;
+      padding: 22px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px #00000012;
+    }
+
+    .featured {
+      grid-column: span 2;
+      background: #173b63;
+      color: white;
+    }
+
+    .project h2 {
+      margin-top: 0;
+    }
+
+    @media (max-width: 600px) {
+      .featured {
+        grid-column: span 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>My Projects</h1>
+  <main class="project-grid">
+    <article class="project featured">
+      <h2>Featured: Personal Portfolio</h2>
+      <p>A responsive portfolio website built with semantic HTML and modern CSS Grid.</p>
+    </article>
+    <article class="project">
+      <h2>Bio Page</h2>
+      <p>A personal biography page using semantic elements.</p>
+    </article>
+    <article class="project">
+      <h2>News Layout</h2>
+      <p>A newspaper-style page created with CSS Grid.</p>
+    </article>
+    <article class="project">
+      <h2>Flexbox Cards</h2>
+      <p>A flexible card layout that adapts to screen size.</p>
+    </article>
+    <article class="project">
+      <h2>Design System</h2>
+      <p>A reusable set of CSS variables and typography rules.</p>
+    </article>
+  </main>
+</body>
+
+</html>

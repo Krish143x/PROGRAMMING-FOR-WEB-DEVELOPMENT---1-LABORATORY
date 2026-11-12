@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox vs Grid</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f5f9;
+      color: #243047;
+    }
+
+    header {
+      background: #173b63;
+      color: white;
+      padding: 20px 6%;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    nav .links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      max-width: 1050px;
+      margin: 25px auto;
+      padding: 0 18px;
+    }
+
+    .content,
+    aside {
+      background: white;
+      padding: 22px;
+      border-radius: 10px;
+    }
+
+    .tiles {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .tile {
+      background: #e6eef8;
+      padding: 16px;
+      border-radius: 8px;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding: 20px;
+      text-align: center;
+      background: #173b63;
+      color: white;
+    }
+
+    @media (max-width: 650px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+
+      .tiles {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav><strong>Layout Lab</strong>
+      <div class="links"><a href="#">Home</a><a href="#">Lessons</a><a href="#">Contact</a></div>
+    </nav>
+  </header>
+  <main>
+    <section class="content">
+      <h1>Flexbox and CSS Grid</h1>
+      <p>Flexbox is best for arranging items in one direction, either a row or a column. CSS Grid is best for arranging
+        items in rows and columns together.</p>
+      <h2>Grid Project Cards</h2>
+      <div class="tiles">
+        <div class="tile">Project One</div>
+        <div class="tile">Project Two</div>
+        <div class="tile">Project Three</div>
+        <div class="tile">Project Four</div>
+      </div>
+    </section>
+    <aside>
+      <h2>When to Use</h2>
+      <p><strong>Flexbox:</strong> navigation bars, button groups and aligned items.</p>
+      <p><strong>Grid:</strong> page layouts, galleries and rows-and-columns structures.</p>
+    </aside>
+  </main>
+  <footer>Demonstration of Flexbox and CSS Grid</footer>
+</body>
+
+</html>
